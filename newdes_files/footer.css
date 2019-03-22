@@ -1,0 +1,194 @@
+footer {
+    display: flex;
+    padding: 78px 91px 89px 91px;
+    background: #f7f7f7;
+}
+footer .phones_title, .footer_menu_title {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.92;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.5);
+}
+footer .phones_number {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #000000;
+}
+footer .phones {
+    padding-right: 58px;
+    min-width: 260px;
+    flex: 1;
+}
+footer .wrap_footer_info {
+    flex: 2;
+}
+footer .footer_menu {
+    display: flex;
+    padding-bottom: 73.5px;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+}
+footer .footer_column {
+    flex: 1;
+    padding-right: 72px;
+    padding-top: 10px;
+}
+footer .footer_column.social {
+    display: flex;
+    align-items: center;
+}
+footer .footer_column.social img {
+    margin-bottom: 0;
+    margin-right: 40px;
+}
+footer .footer_column img {
+    margin-bottom: 30px;
+}
+footer .footer_column img:last-child {
+    margin-bottom: 0;
+}
+footer .footer_column:last-child {
+    padding: 0;
+}
+footer .footer_column a {
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #0050bc;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+footer .footer_column a:hover {
+    text-decoration: underline;
+}
+footer .footer_contact_info {
+    display: flex;
+}
+footer .footer_contact_info .footer_column {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+.footer_menu .phones {
+    display: none;
+}
+footer .full_version {
+    display: none;
+}
+@media (max-width: 1300px) {
+    footer {
+        padding: 30px;
+    }
+    footer > .phones {
+        display: none;
+    }
+    footer .footer_column {
+        padding-right: 40px;
+    }
+    .footer_contact_info .footer_column:first-child {
+        flex: 2;
+    }
+    footer .footer_menu {
+        padding-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .footer_menu .footer_column {
+        flex: 1;
+        min-width: 40%;
+        margin-bottom: 20px;
+        padding-top: 0;
+    }
+    .footer_menu .phones {
+        display: block;
+    }
+    .footer_menu .footer_column:nth-child(3) {
+        order: 1;
+    }
+    .footer_menu .footer_column:nth-child(4) {
+        order: 2;
+    }
+    .footer_menu .footer_column:nth-child(1) {
+        order: 3;
+    }
+    .footer_menu .footer_column:nth-child(2) {
+        order: 4;
+    }
+    .footer_menu .footer_column:nth-child(2n) {
+        padding-right: 0;
+    }
+    .wrap_img_money br {
+        display: none;
+    }
+    .wrap_img_money div {
+        order: 1;
+        padding-right: 10px;
+    }
+    .wrap_img_money div:first-child {
+        order: 2;
+    }
+    .wrap_img_money {
+        display: flex;
+        align-items: center;
+    }
+    footer .phones {
+        padding-right: 0;
+        min-width: 100px;
+    }
+    .footer_contact_info .footer_column:nth-child(2) {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1400px) {
+    footer .phones_title, .footer_menu_title {
+        line-height: 1;
+        padding: 5px 0;
+    }
+}
+@media (max-width: 750px) {
+    footer {
+        padding: 15px;
+    }
+    footer .footer_contact_info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer .full_version {
+        display: block;
+        font-size: 12px;
+        color: #0050BC;
+        letter-spacing: -0.02px;
+        margin-top: 20px;
+    }
+    .footer_menu .footer_column {
+        min-width: 100%;
+    }
+    .footer_menu .footer_column:nth-child(4) {
+        order: 4;
+        border-top: 1px solid rgba(112, 112, 112, 0.5);
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
+    .footer_menu .footer_column {
+        margin-bottom: 0;
+        padding-right: 0;
+    }
+    .footer_menu .phones {
+        padding-bottom: 20px;
+    }
+}

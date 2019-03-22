@@ -1,0 +1,98 @@
+.header_select {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    border-radius: 25px;
+    background-color: rgba(47, 64, 92, 0.8);
+    height: 16px;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    position: relative;
+    z-index: 5;
+}
+.header_select svg {
+    width: 6px;
+    margin-left: 7px;
+}
+.header_select.credit svg {
+    width: auto;
+}
+.header_select:hover .header_select_content {
+    display: block;
+}
+.header_select::before {
+    content: '';
+    height: 10px;
+    display: block;
+    width: 60%;
+    position: absolute;
+    bottom: -10px;
+}
+.header_select .header_select_content {
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.21);
+    background-color: #ffffff;
+    min-width: 306px;
+    z-index: 2;
+    padding: 10px;
+    right: 0;
+    top: 58px;
+}
+.header_select .header_select_content a {
+    color: black;
+    padding: 20px 32px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.header_select .header_select_content a:hover {
+    border-radius: 3px;
+    background-color: #f7f7f7;
+}
+.header_select .header_select_content a:hover .header_select_content_link {
+    display: block;
+}
+.header_select .header_select_content a .header_select_content_item_title {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.header_select .header_select_content a .header_select_content_item_body {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+.header_select .header_select_content_wrap {
+    flex: 4;
+}
+.header_select .header_select_content_link {
+    display: none;
+    flex: 1;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.77;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0050bc;
+}

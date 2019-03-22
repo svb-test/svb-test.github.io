@@ -1,0 +1,73 @@
+section.promo {
+    height: 400px;
+    padding: 50px 91px 50px 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.promo .promo_card {
+    cursor: pointer;
+    flex: 1;
+    margin-right: 15.5px;
+    height: 278px;
+    border-radius: 4px;
+    box-shadow: 0 10px 40px 0 rgba(50, 77, 113, 0.37);
+    background-color: #ffffff;
+}
+section.promo .promo_card:last-child {
+    margin-right: 0;
+}
+section.promo .promo_card .promo_card_description {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 23px 32px;
+}
+section.promo .promo_card .promo_card_description_title {
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+section.promo .promo_card_img {
+    max-height: 162px;
+    overflow: hidden;
+}
+section.promo .promo_card_img img {
+    width: 100%;
+}
+
+@media (max-width: 1300px) {
+    section.promo {
+        padding: 30px;
+        height: auto;
+    }
+    section.promo .promo_card .promo_card_description {
+        padding: 15px;
+    }
+    section.promo .promo_card .promo_card_description_title {
+        font-weight: normal;
+        padding-bottom: 10px;
+    }
+    section.promo .promo_card {
+        height: 244px;
+    }
+}
+
+@media (max-width: 750px) {
+    section.promo {
+        padding: 15px;
+        overflow-x: hidden;
+    }
+    section.promo .promo_card {
+        min-width: 98%;
+    }
+}

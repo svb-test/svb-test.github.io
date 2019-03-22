@@ -1,0 +1,189 @@
+.exchange_rates {
+    display: flex;
+    padding: 30px 91px 48px 91px;
+}
+
+.exchange_rates .exchange_rates_column {
+    flex: 1;
+    padding-right: 110px;
+    position: relative;
+}
+
+.exchange_rates .exchange_rates_column:last-child {
+    padding: 0;
+}
+
+.exchange_rates .exchange_rates_column_title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.press_centr_link {
+    text-decoration: none;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0050bc;
+}
+
+.exchange_rates .news_item {
+    padding-bottom: 22px;
+    cursor: pointer;
+}
+
+.exchange_rates .news_item:hover .news_desc {
+    text-decoration: underline;
+}
+
+.exchange_rates .news_date {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.exchange_rates .news_desc {
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.exchange_rates .exchange_table {
+    width: 100%;
+}
+
+.exchange_rates .exchange_table td {
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #000000;
+    height: 94px;
+}
+
+.exchange_rates .exchange_table td:last-child {
+    text-align: right;
+}
+
+.exchange_rates .exchange_table th {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.exchange_rates .exchange_table th:last-child {
+    text-align: right;
+}
+
+.exchange_rates .exchange_table tbody tr:first-child td {
+    border-bottom: 1px solid rgba(112, 112, 112, 0.5);
+    border-top: 1px solid rgba(112, 112, 112, 0.5);
+}
+
+.exchange_rates .exchange_table_delta {
+    position: absolute;
+    top: -24px;
+    right: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+}
+
+.exchange_rates .wrap_currency_val {
+    position: relative;
+}
+
+.exchange_rates .red {
+    color: #d96363;
+}
+
+.exchange_rates .green {
+    color: #63d990;
+}
+
+.exchange_rates .press_centr_link span {
+    margin-right: 9px;
+    padding-bottom: 1px;
+}
+
+.exchange_rates .press_centr_link:hover span {
+    text-decoration: underline;
+}
+
+@media (max-width: 1300px) {
+    section.exchange_rates {
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+    .exchange_rates .exchange_rates_column_title {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .exchange_rates .exchange_rates_column {
+        min-width: 40%;
+    }
+    .exchange_rates .exchange_rates_column {
+        padding-right: 40px;
+    }
+    .exchange_rates .exchange_rates_column:nth-child(2) {
+        padding-right: 0;
+    }
+    .wrap_news {
+        display: flex;
+    }
+    .news_item {
+        flex: 1;
+    }
+    .news_item:first-child {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 750px) {
+    section.exchange_rates {
+        padding: 15px;
+    }
+    .exchange_rates .exchange_rates_column {
+        min-width: 100%;
+        padding-right: 0;
+    }
+    .wrap_news {
+       flex-wrap: wrap;
+    }
+    .exchange_rates .news_item {
+        min-width: 100%;
+    }
+}

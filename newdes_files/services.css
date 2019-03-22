@@ -1,0 +1,191 @@
+.services {
+    padding: 50px 91px 42px 91px;
+    background-color: #312927;
+}
+
+.services .services_title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.47;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.services .services_title_small {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.services .services_title_small span {
+    margin-right: 9px;
+    padding-bottom: 1px;
+}
+
+.services .services_title_small span:hover {
+    text-decoration: underline;
+}
+
+.services .services_cards {
+    display: flex;
+    padding-bottom: 40px;
+}
+
+.services .services_card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0 10px 40px 0 rgba(50, 77, 113, 0.37);
+    background-color: #ffffff;
+    padding: 23px 30px;
+    flex: 1;
+    max-width: 33%;
+    margin-right: 15px;
+}
+
+.services .services_card:hover .services_card_link span {
+    text-decoration: underline;
+}
+
+.services .services_card_title {
+    padding-bottom: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.services .services_card_desc {
+    flex: 1 1 auto;
+    padding-bottom: 21px;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+.services .services_card_link {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0050bc;
+    text-decoration: none;
+}
+
+.services .services_card_link span {
+    margin-right: 9px;
+}
+
+.services .title_login {
+    border-top: 1px solid rgba(112, 112, 112, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.services .title_login_text {
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.93;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+
+.services .title_login_btn {
+    border-radius: 23px;
+    height: 41px;
+    margin-left: 24px;
+    background: none;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 0.81;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 28px;
+    cursor: pointer;
+}
+
+.services .title_login_btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 1300px) {
+    section.services {
+        padding: 30px;
+    }
+    .services .services_title, .services .title_login_text {
+        font-size: 20px;
+        font-weight: normal;
+    }
+    .services .title_login {
+        justify-content: space-between;
+    }
+    .services .services_cards {
+        flex-wrap: wrap;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    .services .services_card {
+        margin-right: 10px;
+        min-width: 40%;
+        margin-bottom: 20px;
+    }
+    .services .services_card:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    section.services {
+        padding: 15px;
+    }
+    .services .services_title, .services .title_login_text, .services .title_login {
+        flex-wrap: wrap;
+    }
+    .services .services_card {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        min-width: 50%;
+    }
+    .services .title_login_btn {
+        margin-left: 0;
+    }
+    .services .title_login_text {
+        line-height: 1;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .services .services_cards {
+        padding-bottom: 10px;
+    }
+}
